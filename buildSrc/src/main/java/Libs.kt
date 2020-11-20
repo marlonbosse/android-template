@@ -1,5 +1,4 @@
 object Libs {
-    const val androidGradlePlugin = "com.android.tools.build:gradle:3.5.0"
 
     object AndroidX {
         const val core = "androidx.arch.core:core-common:2.1.0"
@@ -14,8 +13,9 @@ object Libs {
             const val runtime = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
         }
 
-        object Test {
-
+        object Testing {
+            const val junit = "androidx.test.ext:junit:1.1.2"
+            const val espresso = "androidx.test.espresso:espresso-core:3.3.0"
         }
     }
 
@@ -28,11 +28,13 @@ object Libs {
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-        const val coroutinesAndroid = "'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'"
+        const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
     }
 
-    object Test {
-        const val junit = "junit:junit:4.12"
+    object Testing {
+        const val junit = "junit:junit:4.13"
+        const val mockito = "org.mockito:mockito-inline:3.5.10"
+        const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
     }
 
     object Android {
@@ -40,10 +42,19 @@ object Libs {
     }
 
     object Hilt {
-        private const val version = ""
+        private const val version = "2.28-alpha"
         const val gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.29.1-alpha"
         const val daggerHilt = "com.google.dagger:hilt-android:$version"
-        const val compiler = "com.google.dagger:hilt-android-compiler:1.0.0-alpha02"
+        const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
+        //If want to inject into WorkManager
+        const val workManager = "androidx.hilt:hilt-work:1.0.0-alpha01"
+        const val compiler = "com.google.dagger:hilt-android-compiler:$version"
         const val testing = "com.google.dagger:hilt-android-testing:$version"
+    }
+
+
+    object Logging {
+        const val timber = "com.jakewharton.timber:timber:4.7.1"
+
     }
 }

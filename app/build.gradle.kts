@@ -44,8 +44,30 @@ dependencies {
     implementation(Libs.Kotlin.coroutinesAndroid)
 
     // ANDROID
+    implementation(Libs.AndroidX.core)
+    implementation(Libs.AndroidX.appcompat)
+    implementation(Libs.AndroidX.coordinatorLayout)
+    implementation(Libs.AndroidX.recyclerview)
+    implementation(Libs.AndroidX.preference)
+    implementation(Libs.AndroidX.Lifecycle.runtime)
+    implementation(Libs.AndroidX.Lifecycle.viewModel)
+
+    // DESIGN
+    implementation(Libs.Design.material)
 
     // DEPENDENCY INJECTIONS
+    implementation(Libs.Hilt.daggerHilt)
+    kapt(Libs.Hilt.compiler)
 
+    // UNIT TESTING
+    testImplementation(Libs.Testing.junit)
+    testImplementation(Libs.Testing.mockito)
+    testImplementation(Libs.Testing.mockitoKotlin)
+    kaptTest(Libs.Hilt.testing)
 
+    // INSTRUMENTATION TESTING
+    androidTestImplementation(Libs.AndroidX.Testing.junit)
+    androidTestImplementation(Libs.AndroidX.Testing.espresso)
+    androidTestImplementation(Libs.Hilt.testing)
+    kaptAndroidTest(Libs.Hilt.testing)
 }
