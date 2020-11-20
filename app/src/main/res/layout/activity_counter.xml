@@ -12,6 +12,11 @@
         android:layout_gravity="center"
         android:orientation="horizontal">
 
+        <com.google.android.material.button.MaterialButton
+            android:text="Was geht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bloco_green">#00d79f</color>
-    <color name="bloco_cyan">#00E0C7</color>
-    <color name="bloco_light_blue">#9ED7D7</color>
-    <color name="bloco_dark_blue">#007EC7</color>
-
-    <color name="dark_red">#B00020</color>
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="color_primary">#212121</color>
+    <color name="color_primary_variant">#000000</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_secondary">@color/design_default_color_secondary</color>
+    <color name="color_secondary_variant">@color/design_default_color_secondary_variant</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_error">#F44336</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_on_surface">#000000</color>
+    <color name="color_background">#FAFAFA</color>
+    <color name="color_on_background">#000000</color>
+    <color name="color_status_bar">#000000</color>
 </resources>

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AnkerappsTheme">
         <activity android:name=".ui.counter.CounterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

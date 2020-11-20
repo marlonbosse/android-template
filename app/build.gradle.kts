@@ -3,7 +3,7 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
-//    id ("dagger.hilt.android.plugin")
+    id ("dagger.hilt.android.plugin")
 }
 
 repositories {
@@ -33,6 +33,10 @@ android {
     packagingOptions {
         exclude("DebugProbesKt.bin")
     }
+
+    kotlinOptions {
+        freeCompilerArgs = listOf("-Xallow-result-return-type")
+    }
 }
 
 dependencies {
@@ -57,6 +61,8 @@ dependencies {
 
     // DEPENDENCY INJECTIONS
     implementation(Libs.Hilt.daggerHilt)
+    implementation(Libs.Hilt.viewModel)
+    kapt(Libs.Hilt.androidCompiler)
     kapt(Libs.Hilt.compiler)
 
     // UNIT TESTING
@@ -70,4 +76,8 @@ dependencies {
     androidTestImplementation(Libs.AndroidX.Testing.espresso)
     androidTestImplementation(Libs.Hilt.testing)
     kaptAndroidTest(Libs.Hilt.testing)
+
+    // UTILITY
+    implementation(Libs.Logging.timber)
+    implementation(Libs.Misc.flowPreferences)
 }

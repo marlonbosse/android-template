@@ -48,13 +48,17 @@ object Libs {
         const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
         //If want to inject into WorkManager
         const val workManager = "androidx.hilt:hilt-work:1.0.0-alpha01"
-        const val compiler = "com.google.dagger:hilt-android-compiler:$version"
+        const val compiler = "androidx.hilt:hilt-compiler:1.0.0-alpha01"
+        const val androidCompiler = "com.google.dagger:hilt-android-compiler:$version"
         const val testing = "com.google.dagger:hilt-android-testing:$version"
     }
 
 
     object Logging {
         const val timber = "com.jakewharton.timber:timber:4.7.1"
+    }
 
+    object Misc {
+        const val flowPreferences = "com.github.tfcporciuncula.flow-preferences:flow-preferences:1.3.3"
     }
 }
