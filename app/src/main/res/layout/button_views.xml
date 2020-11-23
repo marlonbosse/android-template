@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/outlinedButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginStart="24dp"
+            android:id="@+id/iconOutlinedButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide"
+            app:icon="@drawable/ic_hide_color_control_normal_18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/raisedContainedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raised" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginStart="24dp"
+            android:id="@+id/iconRaisedContainedButton"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icon Raised"
+            app:icon="@drawable/ic_show_color_control_normal_18dp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGroupHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton1Horizontal"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton2Horizontal"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton3Horizontal"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGroupVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton1Vertical"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="36dp"
+            android:text="None" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton2Vertical"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="36dp"
+            android:text="Custom" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleButton3Vertical"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minHeight="36dp"
+                android:text="All" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>

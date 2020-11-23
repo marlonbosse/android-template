@@ -4,10 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import io.bloco.template.R
 import io.bloco.template.ui.BaseActivity
+import io.bloco.template.ui.custom.BottomAppBarCutCornersTopEdge
 import kotlinx.android.synthetic.main.activity_counter.*
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -26,7 +28,7 @@ class CounterActivity : BaseActivity() {
         fabDecrement.setOnClickListener { viewModel.decrementClick() }
 
         viewModel.value()
-            .onEach { value.text = it.toString() }
+            .onEach { counterText.setText(it.toString()) }
             .launchIn(lifecycleScope)
 
         viewModel.errors()
@@ -34,11 +36,24 @@ class CounterActivity : BaseActivity() {
                 showErrorSnackBar()
             }
             .launchIn(lifecycleScope)
+
+        setupBottomAppBarCutCornersBackground()
     }
 
 
     private fun showErrorSnackBar() {
         Snackbar.make(coordinatorLayout, R.string.error_message, Snackbar.LENGTH_SHORT).show()
+    }
+
+    private fun setupBottomAppBarCutCornersBackground() {
+        val topEdge = BottomAppBarCutCornersTopEdge(
+            bottomAppBar.fabCradleMargin,
+            bottomAppBar.fabCradleRoundedCornerRadius,
+            bottomAppBar.cradleVerticalOffset
+        )
+        val background = bottomAppBar.background as MaterialShapeDrawable
+        background.shapeAppearanceModel = background.shapeAppearanceModel.toBuilder().setTopEdge(topEdge).build()
+        background.invalidateSelf()
     }
 
 }
