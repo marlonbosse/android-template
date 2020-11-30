@@ -55,6 +55,7 @@ dependencies {
     implementation(Libs.AndroidX.preference)
     implementation(Libs.AndroidX.Lifecycle.runtime)
     implementation(Libs.AndroidX.Lifecycle.viewModel)
+    implementation(Libs.AndroidX.constraint)
 
     // DESIGN
     implementation(Libs.Design.material)

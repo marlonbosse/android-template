@@ -6,6 +6,7 @@ object Libs {
         const val preference = "androidx.preference:preference-ktx:1.1.1"
         const val coordinatorLayout = "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
         const val recyclerview = "androidx.recyclerview:recyclerview:1.1.0"
+        const val constraint = "androidx.constraintlayout:constraintlayout:2.0.4"
 
         object Lifecycle {
             private const val version = "2.2.0"
