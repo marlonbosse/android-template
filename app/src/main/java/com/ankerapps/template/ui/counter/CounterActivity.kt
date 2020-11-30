@@ -26,15 +26,12 @@ class CounterActivity : BaseActivity() {
         fabIncrement.setOnClickListener { viewModel.incrementClick() }
         fabDecrement.setOnClickListener { viewModel.decrementClick() }
 
-        viewModel.value()
-            .onEach { counterText.setText(it.toString()) }
-            .launchIn(lifecycleScope)
-
-        viewModel.errors()
-            .onEach {
-                showErrorSnackBar()
-            }
-            .launchIn(lifecycleScope)
+        viewModel.counter.observe(this, {
+            counterText.setText(it.toString())
+        })
+        viewModel.errors.observe(this, {
+            showErrorSnackBar()
+        })
 
         setupBottomAppBarCutCornersBackground()
     }

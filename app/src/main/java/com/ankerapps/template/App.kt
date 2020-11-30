@@ -21,14 +21,12 @@ open class App : Application() {
                 StrictMode.ThreadPolicy.Builder()
                     .detectAll()
                     .penaltyLog()
-                    .penaltyDeath()
                     .build()
             )
             StrictMode.setVmPolicy(
                 VmPolicy.Builder()
                     .detectAll()
                     .penaltyLog()
-                    .penaltyDeath()
                     .build()
             )
         }

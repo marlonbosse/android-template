@@ -18,5 +18,4 @@ class AppModule {
     @Singleton
     fun flowSharedPreferences(@ApplicationContext appContext: Context) =
         FlowSharedPreferences(PreferenceManager.getDefaultSharedPreferences(appContext))
-
 }

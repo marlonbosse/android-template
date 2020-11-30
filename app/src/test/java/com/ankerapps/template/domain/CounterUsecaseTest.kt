@@ -11,10 +11,10 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class GetAndSetCounterTest {
+class CounterUsecaseTest {
 
     val mockRepo = mock<CounterRepository>()
-    val getAndSetCounter = GetAndSetCounter(mockRepo)
+    val getAndSetCounter = CounterUsecase(mockRepo)
 
     @Test
     fun get() = runBlocking {

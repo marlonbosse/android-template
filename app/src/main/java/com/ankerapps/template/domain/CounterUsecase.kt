@@ -5,19 +5,19 @@ import com.ankerapps.template.data.CounterRepository
 import timber.log.Timber
 import javax.inject.Inject
 
-class GetAndSetCounter
+class CounterUsecase
 @Inject constructor(
-    private val preferences: CounterRepository
+    private val counterRepo: CounterRepository
 ){
 
-    fun get() = preferences.getValue()
+    suspend fun get() = counterRepo.getValue()
 
     suspend fun editCounter(counter: Counter) : Result<Counter> {
         if (counter.value < 0) {
             Timber.w(IncrementError(), "Value given was ${counter.value}")
             return Result.failure(IncrementError())
         }
-        preferences.setValue(counter)
+        counterRepo.setValue(counter)
         return Result.success(counter)
     }
 
