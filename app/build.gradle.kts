@@ -19,6 +19,8 @@ android {
         compileSdkVersion(Versions.Build.targetSdk)
         versionCode(Versions.Build.versionCode)
         versionName(Versions.Build.versionName)
+
+        testInstrumentationRunner = "com.ankerapps.template.utils.TestRunner"
     }
 
     kapt {

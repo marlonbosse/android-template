@@ -3,7 +3,7 @@
     package="com.ankerapps.template">
 
     <application
-        android:name="com.ankerapps.template.com.ankerapps.template.App"
+        android:name="com.ankerapps.template.App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -11,7 +11,7 @@
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup"
         android:theme="@style/AnkerappsTheme">
-        <activity android:name="com.ankerapps.template.com.ankerapps.template.ui.counter.CounterActivity">
+        <activity android:name="com.ankerapps.template.ui.counter.CounterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -59,14 +59,4 @@ class CounterActivityTest {
         onView(withId(R.id.counterText)).check(matches(withText("0")))
     }
 
-    @Test
-    fun decrementErrorMessage() {
-        onView(withId(R.id.fabDecrement)).perform(click())
-        onView(withId(R.id.fabDecrement)).perform(click())
-        onView(withId(R.id.counterText)).check(matches(withText("0")))
-
-        onView(withId(com.google.android.material.R.id.snackbar_text))
-            .check(matches(withText(R.string.error_message)))
-    }
-
 }
