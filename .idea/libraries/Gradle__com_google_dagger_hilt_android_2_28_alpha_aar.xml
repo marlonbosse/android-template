@@ -2,9 +2,10 @@
   <library name="Gradle: com.google.dagger:hilt-android:2.28-alpha@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e6a6d69ccfbd78644d28d06d3a56364/hilt-android-2.28-alpha/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a7967b507e530dc1c1256644f665c57a/hilt-android-2.28-alpha/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a7967b507e530dc1c1256644f665c57a/hilt-android-2.28-alpha/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a7967b507e530dc1c1256644f665c57a/hilt-android-2.28-alpha/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e704f8ac4bcbbbc5fc5be864c797ff81/hilt-android-2.28-alpha/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e704f8ac4bcbbbc5fc5be864c797ff81/hilt-android-2.28-alpha/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e704f8ac4bcbbbc5fc5be864c797ff81/hilt-android-2.28-alpha/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/hilt-android/2.28-alpha/ff3f5f3cdaf69f15eb6261981ee732351eaca008/hilt-android-2.28-alpha-javadoc.jar!/" />
